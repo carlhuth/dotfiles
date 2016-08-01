@@ -1,7 +1,8 @@
 {
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	// nice monospace font from Adobe, the light variant looks
-	// very pleasing on dark theme
+	// nice monospace font from Adobe, the light variant
+	// very pleasing on dark theme and Macbook screen
 	// "font_face": "Source Code Pro Light",
 	// "font_size": 13,
 	"ignored_packages":
