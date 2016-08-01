@@ -2,8 +2,8 @@ Nâu Dotfiles
 ============
 A set of recommended OS and tooling configurations for Nau team.
 
-OSX
----
+📁 OSX
+------
 These dotfiles are specific to Mac OS X only.
 
 ### The Setup New Machine Script:
@@ -44,20 +44,33 @@ There are additional setup you might be interested in:
 
 -------------------------------------------------------------------------------
 
-Ubuntu
-------
+📁 Ubuntu
+---------
 Ubuntu is not our official working OS yet. 
 These dotfiles and bash profile configs are for personal uses. 
 Usage is similar to ones in OSX.
 
 -------------------------------------------------------------------------------
 
-SublimeText
--------------
+📁 SublimeText
+--------------
 Our conventional IDE for Front End development is SubLime Text 3.
-Inside this folders are predefined snippets and settings for it:
+Inside this folders are predefined snippets and settings for it.
 
-### JavaScript
+#### How To Install
+
+##### OSX / Windows / Linux
+
+1. Install [Sublime Package Control](https://packagecontrol.io).
+2. In Sublime Text, open menu __Preferences__ > __Browser Packages...__ -> The ST3's __Packages__ folder will be opened.
+4. Copy __JavaScript__ & __User__ folders in `sublimetext/Packages` from this repo over to this __Packages__ folder.
+5. Let SublimeText Package Control automatically install the plugins listed its setting file.
+
+##### Experimental OSX
+
+1. Execute shell script `sublimetext/sync.sh` in terminal to copy the files to the application __Packages__.
+
+### 📁 JavaScript
 
 The files in this folder can be classified into these categories:
 
@@ -79,13 +92,10 @@ Some remarkable snippets:
 
 - __console.log()__: Triggered by typing `log`; after it completes the text `console.log()`, you have the chance to switch to `console.info()` or `console.warn()` or `console.error()` by typing the first letter of the method, respectively __i, w, e__
 - __[IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) block__: Triggered by `iife`; complete the "immediately invoked function expression" block.
-- __[JSHint](http://jshint.com/) by-project config__: Triggered by `jshintrc` in new text file; it will complete the file with Nau's conventional linting rules for JavaScript. Save it as `.jshintrc` to the root of the project.
-- __[JSCS](http://jscs.info/) coding style config__: Triggered by `jscsrc` in new text file; it will complete the file with Nau's coding style rules for JavaScript. Save it as `.jscsrc` to the root of the project.
-- __[RequireJS](http://requirejs.org/docs/api.html#cjsmodule) Module with Simplified CommonJS Wrapper__: Triggered by `define`. This is our recommended AMD syntax where the dependencies are imported by a `require` function which makes it similar to NodeJS modules and a convenience to add / remove dependencies.
 
 Please check out other snippets in the folder to learn what's available.
 
-### User
+### 📁 User
 
 Some other general config for ST3:
 
@@ -99,18 +109,22 @@ The recommended plugins are:
 
 - [Alignment](https://github.com/wbond/sublime_alignment): Help align code for better readability (especially in long properties list). Shortcut has been switch to `ctrl+shift+a` due to conflicts with SublimeLinter
 - [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete): List and suggest completion for all the words appeared in opened files
-- [Babel](https://github.com/babel/babel-sublime): Language definitions for [ES6+ JavaScript](http://kangax.github.io/compat-table/es6/) with [React JSX syntax](http://facebook.github.io/react/docs/jsx-in-depth.html) extensions.
+- [AutoFileName](https://packagecontrol.io/packages/AutoFileName): Auto complete file names found in the project. This plugin is a complement to the FuzzyFilePath plugin.
+- [Babel](https://github.com/babel/babel-sublime): Language definitions for [ES6+ JavaScript](http://kangax.github.io/compat-table/es6/) with [React JSX syntax](http://facebook.github.io/react/docs/jsx-in-depth.html) extensions. 
 - [Color Highlighter](https://github.com/Monnoroch/ColorHighlighter): is a plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes (like "#FFFFFF", "rgb(255,255,255)", "white", etc.) with their real color. Also, plugin adds color picker to easily modify colors.
-- [CSS3](https://github.com/y0ssar1an/CSS3): The most complete CSS support for Sublime Text 3
+- [ColorPicker](https://packagecontrol.io/packages/ColorPicker): Select and insert color from OS default color picker tool. Windows/Linux: `ctrl+shift+c`
+OS X: `cmd+shift+c`.
 - [DocBlockr](https://github.com/spadgos/sublime-jsdocs): Simplifies writing DocBlock comments in Javascript, PHP, CoffeeScript, Actionscript...
 - [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime): Helps developers maintain consistent coding styles between different editors. See `.editorconfig` snippet.
 - [Emmet](http://emmet.io/): Previously known as Zen Coding. Greatly enhance HTML & CSS workflow.
+- [ESLint-Formatter](https://packagecontrol.io/packages/ESLint-Formatter): format JS/ES file according to current ESLint config.
 - [FuzzyFilePath](https://github.com/sagold/FuzzyFilePath): Autocomplete relative or absolute file paths in Sublime Text project folder. Similar to AutoFileName but with fuzzy search capability.
-- [GitGutter](http://www.jisaacks.com/gitgutter): A [ST3] plugin to see git diff in gutter
-- [Handlebars](https://github.com/daaain/Handlebars/): [ST3] package for Handlebars.js templates
+- [GitGutter](http://www.jisaacks.com/gitgutter): A plugin to see git diff in gutter
+- [Handlebars](https://github.com/daaain/Handlebars/): package for Handlebars.js templates
 - [Hex to HSL Color Converter](https://github.com/atadams/Hex-to-HSL-Color): plugin to convert CSS Hex colors to HSL
 - [HTML-CSS-JS Prettify](https://github.com/victorporof/Sublime-HTMLPrettify): HTML, CSS, JavaScript and JSON code formatter for Sublime Text 2 and 3 via node.js
 - [Insert Nums](https://github.com/jbrooksuk/InsertNums): A Sublime Text 2 and 3 plugin, that inserts (consecutive) numbers across multiple selections or modifies the selections' contents with expressions. Huge configurability.
+- [InsertDate](https://packagecontrol.io/packages/InsertDate): Insert current date time with chosen format. Useful for editing Markdown's front matter and static blog site.
 - [JSCS-Formatter](https://github.com/TheSavior/SublimeJSCSFormatter): Sublime Text 3 Plugin to autoformat your javascript code according to the JSCS configuration files you already have.
 - [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview): Preview and build your markdown files quickly in your web browser from sublime text 2/3.
 - [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing): Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes.
@@ -118,23 +132,25 @@ The recommended plugins are:
 - [Package Control](https://packagecontrol.io): The de facto package manager for Sublime Text. You already used it to install these plugins.
 - [Pretty JSON](https://github.com/dzhibas/SublimePrettyJson): plugin for [ST3] to pretty [and minify] json
 - [PxToEm](https://github.com/ningbit/sublime_pxtoem): plugin to convert px to em with comments. Shortcut was changed to `ctrl+shift+e` to avoid linter conflicts.
-- [ReactJS](https://github.com/reactjs/sublime-react): Sublime Text helpers for React/JSX
-- [SCSS](https://github.com/MarioRicalde/SCSS.tmbundle): The TextMate SCSS Official Bundle. Now Compatible with SublimeText2/3.
-- [Select Quoted](https://github.com/int3h/SublimeSelectQuoted): A Sublime Text 2/3 plugin at add a "Expand Selection to Quoted" command
+- [ReactJS](https://github.com/reactjs/sublime-react): Sublime Text helpers for React/JSX.
+- [SassBeautify](https://packagecontrol.io/packages/SassBeautify): Format SASS / SCSS files. Needs ruby sass preinstalled.
+- [SCSS](https://github.com/MarioRicalde/SCSS.tmbundle): The TextMate SCSS Syntax Official Bundle.
+- [Select Quoted](https://github.com/int3h/SublimeSelectQuoted): A Sublime Text 2/3 plugin at add a "Expand Selection to Quoted" command.
+- [SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements): Enhance sidebar with many more useful commands.
 - [SublimeLinter](http://sublimelinter.com/): Interactive (real time feedback) code linting framework for Sublime Text 3. This is just the base framework, additional packages for related languages need to be installed.
-- [SublimeLinter-contrib-scss-lint](https://github.com/attenzione/SublimeLinter-scss-lint): SublimeLinter plugin for Sass scss syntax, using the Ruby gem backend `scss-lint`
-- [SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint): SublimeLinter plugin for CSS, using NodeJS package `csslint`.
-- [SublimeLinter-jscs](https://github.com/mdevils/node-jscs/): SublimeLinter 3 plugin for NodeJS package `jscs`, a code style checking tool.
-- [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint): SublimeLinter plugin for JavaScript, using NodeJS package `jshint`.
+- [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint):  SublimeLinter wrapper for ESLint, requires global NodeJS package `eslint`.
+- [SublimeLinter-contrib-stylelint](): SublimeLinter wrapper for stylelint, requires global NodeJS package `stylelint`.
+- [SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint): _(deprecated)_ SublimeLinter plugin for JavaScript, using NodeJS package `jshint`.
 - [SublimeLinter-json](https://github.com/SublimeLinter/SublimeLinter-json): SublimeLinter plugin for JSON. 
-- [SublimeLinter-jsxhint](https://github.com/SublimeLinter/SublimeLinter-jsxhint): SublimeLinter 3 plugin for JSX (React.js), using the NodeJS package `jsxhint`. 
-- [Terminal](http://wbond.net/sublime_packages/terminal): Launch terminals from the current file or the root project folder.
+- [Terminal](http://wbond.net/sublime_packages/terminal): Launch terminal app with working folder from the current file or the root project.
+- [tern_for_sublime](https://packagecontrol.io/packages/tern_for_sublime): A sophisticated JavaScript autocomplete engine which enhance JS/ES6 coding experience on ST. With latest ST3 build, tern will display a helpful documentation popup at method opening.
 
 _Note: key bindings for the plugins to be added_
 
 #### Additional Snippets:
 
-- __SCSS Lint config__: Triggered by `scsslint` in new text file. This is our conventional SCSS linting rules. Save it as `.scss-lint.yml` to project root.
+- __[ESLint](http://eslint.org) config__: Triggered by `eslintrc` in new text file; it will complete the file with __Nau's conventional coding rules__ for __JavaScript__. Save it as `.eslintrc` to the root of the project.
+- __[stylelint](http://stylelint.io) config__: Triggered by `stylelintrc` in new text file; it will complete the file with __Nau's conventional coding rules__ for __CSS__ and __SCSS__. Save it as `.stylelintrc` to the root of the project. 
 - __.gitignore__: Triggered by 'gitignore' in new text file. This is our generic files ignoring rules for GIT. Further modify it with project specific rules. Save it as `.gitignore` at project root and checked into GIT repo.
 - __Default EditorConfig__: Triggered by `editorconfig` in new text file. Save it as `.editorconfig` at project root and should be checked into version control system.
 
@@ -148,6 +164,8 @@ These key binding modifiers for OSX (`Default (OSX).sublime-keymap`) are to reso
 [
     // Reveal current opening file in sidebar:
     {"keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
+    // Key bindings for copying full path of current file to clipboard
+    {"keys": ["super+k", "super+p"], "command": "copy_path" },
     // New key binding for Alignment plugin
     {"keys": ["shift+ctrl+a"], "command": "alignment"},
     // New key binding for PxToEm plugin
@@ -177,7 +195,7 @@ Details of what's been set up for ST3 and plugins to enhance the workflow:
 Here's an extract of the system preference with explanation comments:
 ```js
 {
-    // nice monospace font from Adobe, the light variant looks 
+    // nice monospace font from Adobe, the light variant 
     // very pleasing on dark theme
     "font_face": "Source Code Pro Light",
     "font_size": 13,
@@ -185,11 +203,11 @@ Here's an extract of the system preference with explanation comments:
     "scroll_past_end": true,
     //avoid confusion with tabstops
     "tab_completion": false,
-    // Flat dark theme with very good set of file icon on the side bar; 
-    // need to install via Package Control, require ST3 Build 3062++
-    "theme": "Seti.sublime-theme",
-    // better dark monokai editor scheme, bundled in User folder
-    "color_scheme": "Packages/User/Monokai Soda.tmTheme",
+    // Flat dark theme with file-type-aware icon on the side bar; 
+    // need to install via Package Control
+    "theme": "predawn-DEV.sublime-theme",
+    // better dark monokai editor scheme, preinstalled in bundled plugin list
+    "color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
     // The delay, in ms, before the auto complete window is shown after typing
     // Note: Delaying this to have the completion files more likely
     // to be included in the auto complete list
@@ -206,8 +224,9 @@ Some of the entries were commented out in the real file to keep the preferences 
 
 Downloads:
 
-- Adobe's [Source Code Pro font](https://github.com/adobe-fonts/source-code-pro)
-- [Seti UI Theme](https://packagecontrol.io/packages/Seti_UI)
+- Adobe's [Source Code Pro font](https://github.com/adobe-fonts/source-code-pro): A legible and coder-friendly monospace font.
+- [Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended): This is a much enhanced version of ST default Monokai scheme.
+- [Predawn Theme](https://packagecontrol.io/packages/Predawn): One of the best flat design dark theme for Sublime Text.
 
 ##### `FuzzyFilePath.sublime-settings`
 
@@ -224,4 +243,4 @@ Thanks to
 
 -------------------------------------------------------------------------------
 
-© 2015 Nâu Studio
+© 2015-2016 Nâu Studio
