@@ -1,7 +1,8 @@
 {
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	// nice monospace font from Adobe, the light variant looks
-    // very pleasing on dark theme
+	// nice monospace font from Adobe, the light variant
+	// very pleasing on dark theme and Macbook screen
 	// "font_face": "Source Code Pro Light",
 	// "font_size": 13,
 	"ignored_packages":
@@ -18,6 +19,13 @@
 		"node_modules",
 		".meteor/local"
 	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.sql",
+		"node_modules/**/*"
+	],
+	"index_files": true,
 	//this must be set in user settings to be enabled in MAC OSX
 	"scroll_past_end": true,
 	//avoid confusion with tabstops
@@ -25,8 +33,8 @@
 	// The delay, in ms, before the auto complete window is shown after typing
 	// TTT: Delaying this to have the completion files more likely
 	// to be included in the auto complete list
-    "auto_complete_delay": 200,
-    // For best practices:
+	"auto_complete_delay": 200,
+	// For best practices:
 	"trim_trailing_white_space_on_save": true,
 	// Easier to differentiate folders from files
 	"bold_folder_labels": true,
