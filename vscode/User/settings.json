@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite the default settings
+{
+	// Controls whether the editor should render whitespace characters
+	"editor.renderWhitespace": "boundary",
+	"editor.fontFamily": "Source Code Pro, Monaco, Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	// Controls the font weight.
+	"editor.fontWeight": "300",
+	// Controls whether the editor should render the current line highlight
+	"editor.renderLineHighlight": "gutter",
+	"workbench.activityBar.visible": false,
+	"files.associations": {
+		".env": "shellscript"
+	},
+	"terminal.integrated.shellArgs.osx": ["-l"]
+	// Controls whether the editor should render indent guides
+	// "editor.renderIndentGuides": true
+}
