@@ -1,7 +1,7 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+shift+a",        "command": "extension.align" },
-    { "key": "cmd+shift+space",     "command": "expand_region" },
+    { "key": "cmd+shift+space",     "command": "editor.action.smartSelect.grow" },
     { "key": "ctrl+shift+w",        "command": "editor.emmet.action.wrapWithAbbreviation" },
     { "key": "cmd+shift+k",         "command": "editor.emmet.action.updateTag" },
     { "key": "cmd+'",               "command": "extension.selectSingleQuote" }

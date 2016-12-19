@@ -20,8 +20,6 @@ These are some recommnded extension to enhance productivity and to close the gap
 - change-case
 - EditorConfig for VS code
 - ESLint
-- expand-region
-- Quick and Simple Text Selection
 - Quick and Simple Text Selection
 - stylelint
 - Sublime Text Keymap (to quickly move on from ST3)
