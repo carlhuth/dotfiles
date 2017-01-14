@@ -1,8 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-	// Controls whether the editor should render whitespace characters
-	"editor.renderWhitespace": "boundary",
-	"editor.fontFamily": "Source Code Pro, Monaco, Consolas, 'Courier New', monospace",
+	// Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+	"editor.renderWhitespace": "none",
+	"editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
 	"editor.fontSize": 14,
 	// Controls the font weight.
 	"editor.fontWeight": "300",
@@ -12,7 +12,20 @@
 	"files.associations": {
 		".env": "shellscript"
 	},
-	"terminal.integrated.shellArgs.osx": ["-l"]
+	"terminal.integrated.shellArgs.osx": [
+		"-l"
+	],
+	// When enabled, will trim trailing whitespace when saving a file.
+	"files.trimTrailingWhitespace": true,
 	// Controls whether the editor should render indent guides
-	// "editor.renderIndentGuides": true
+	"editor.renderIndentGuides": true,
+	"css.validate": false,
+	"window.zoomLevel": 0,
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.version": 242,
+	"sync.showSummary": true,
+	"sync.forceDownload": false,
+	"sync.workspaceSync": false,
+	"sync.anonymousGist": false
 }

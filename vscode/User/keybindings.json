@@ -1,8 +1,10 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "ctrl+shift+a",        "command": "extension.align" },
-    { "key": "cmd+shift+space",     "command": "editor.action.smartSelect.grow" },
-    { "key": "ctrl+shift+w",        "command": "editor.emmet.action.wrapWithAbbreviation" },
-    { "key": "cmd+shift+k",         "command": "editor.emmet.action.updateTag" },
-    { "key": "cmd+'",               "command": "extension.selectSingleQuote" }
+    { "key": "ctrl+shift+a",    "command": "extension.align" },
+    { "key": "cmd+shift+space", "command": "editor.action.smartSelect.grow" },
+    { "key": "ctrl+shift+w",    "command": "editor.emmet.action.wrapWithAbbreviation" },
+    { "key": "cmd+shift+k",     "command": "editor.emmet.action.updateTag" },
+    { "key": "cmd+'",           "command": "extension.selectSingleQuote" },
+    { "key": "alt+cmd+f",       "command": "editor.action.startFindReplaceAction" },
+    { "key": "shift+cmd+v",     "command": "pasteAndIndent.action", "when": "editorTextFocus && !editorReadonly" }
 ]
