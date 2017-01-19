@@ -6,5 +6,6 @@
     { "key": "cmd+shift+k",     "command": "editor.emmet.action.updateTag" },
     { "key": "cmd+'",           "command": "extension.selectSingleQuote" },
     { "key": "alt+cmd+f",       "command": "editor.action.startFindReplaceAction" },
+    { "key": "ctrl+shift+i",    "command": "editor.action.toggleRenderWhitespace" },
     { "key": "shift+cmd+v",     "command": "pasteAndIndent.action", "when": "editorTextFocus && !editorReadonly" }
 ]

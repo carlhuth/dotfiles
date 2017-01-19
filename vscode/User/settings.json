@@ -2,10 +2,10 @@
 {
 	// Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
 	"editor.renderWhitespace": "none",
-	"editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
-	"editor.fontSize": 14,
+	"editor.fontFamily": "Monaco, Menlo, Consolas, Source Code Pro, 'Courier New', monospace",
+	"fontshortcuts.defaultFontSize": 14,
 	// Controls the font weight.
-	"editor.fontWeight": "300",
+	"editor.fontWeight": "400",
 	// Controls whether the editor should render the current line highlight
 	"editor.renderLineHighlight": "gutter",
 	"workbench.activityBar.visible": false,

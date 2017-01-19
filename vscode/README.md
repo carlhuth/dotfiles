@@ -17,19 +17,21 @@ Emmet, and basic linting. Therefore, there are not many extensions required to i
 These are some recommnded extension to enhance productivity and to ease the migration from ST3:
 
 - Align                   : Similar to ST3 Alignment plugin
+- bracket-pair-colorizer  : Color bracket pairs with different colors for easier spotting scopes
 - change-case             : More case conversion commands
 - code-settings-sync      : Extension to help syncing vscode's settings to Github's gist
 - copy-syntax             : Copy code with formatted RTF, to copy syntax highlighted code to other software
 - docthis                 : Generate comment documentation
 - EditorConfig            : Auto switching editor config based on project .editorconfig
+- fontsize-shortcuts      : Allow to increase / decrease editor's font size instead of zooming
 - markdown-shortcuts      : Shortcuts and commands for Markdown editing
 - python                  : Python syntax (optional)
 - stylelint               : Lint CSS/SCSS with `stylelint`
-- sublime-keybindings     :
-- swig                    :
+- sublime-keybindings     : Reproduce Sublime's keybindings to assist migration of Sublime Text user
+- swig                    : SWIG template syntax color
 - vscode-eslint           : Lint JS/JSX with `eslint`
-- vscode-paste-and-indent :
-- vscode-quick-select     :
+- vscode-paste-and-indent : Paste and fix indentation
+- vscode-quick-select     : Help quickly select contents within different kind of brackets
 
 
 ---
