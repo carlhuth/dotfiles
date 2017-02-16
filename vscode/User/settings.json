@@ -1,31 +1,61 @@
 // Place your settings in this file to overwrite the default settings
 {
-	// Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
-	"editor.renderWhitespace": "none",
-	"editor.fontFamily": "Monaco, Menlo, Consolas, Source Code Pro, 'Courier New', monospace",
-	"fontshortcuts.defaultFontSize": 14,
-	// Controls the font weight.
-	"editor.fontWeight": "400",
-	// Controls whether the editor should render the current line highlight
-	"editor.renderLineHighlight": "gutter",
-	"workbench.activityBar.visible": false,
-	"files.associations": {
-		".env": "shellscript"
-	},
-	"terminal.integrated.shellArgs.osx": [
-		"-l"
-	],
-	// When enabled, will trim trailing whitespace when saving a file.
-	"files.trimTrailingWhitespace": true,
-	// Controls whether the editor should render indent guides
-	"editor.renderIndentGuides": true,
-	"css.validate": false,
-	"window.zoomLevel": 0,
-	"sync.autoDownload": false,
-	"sync.autoUpload": false,
-	"sync.version": 242,
-	"sync.showSummary": true,
-	"sync.forceDownload": false,
-	"sync.workspaceSync": false,
-	"sync.anonymousGist": false
+// Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+"editor.renderWhitespace": "none", // toggle whitespace with Ctrl-Shift-i
+"editor.fontFamily": "Fira Code, Roboto Mono, Source Code Pro, Consolas, Monaco, monospace",
+// Controls the font weight.
+"editor.fontWeight": "300",
+"editor.fontLigatures": true,
+"editor.lineHeight": 27,
+// Controls whether the editor should render the current line highlight
+"editor.renderLineHighlight": "gutter",
+// Controls whether the editor should highlight similar matches to the selection
+"editor.selectionHighlight": false,
+"fontshortcuts.defaultFontSize": 15,
+"workbench.activityBar.visible": false,
+"terminal.integrated.shellArgs.osx": ["-l"],
+// When enabled, will trim trailing whitespace when saving a file.
+"files.trimTrailingWhitespace": true,
+// Controls if the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
+"editor.formatOnPaste": true,
+// Controls whether the editor should render indent guides
+"editor.renderIndentGuides": true,
+// Controls whether snippets are shown with other suggestions and how they are sorted.
+"editor.snippetSuggestions": "top",
+// Insert snippets when their prefix matches. Works best when 'quickSuggestions' aren't enabled.
+"editor.tabCompletion": true,
+// Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
+"editor.wrappingColumn": -1,
+"editor.wordWrap": false,
+// Date format to be used.
+"insertdatestring.format": "YYYY-MM-DDThh:mm:ssZ:00",
+"css.validate": false,
+"window.zoomLevel": 0,
+"terminal.integrated.fontSize": 15,
+"editor.fontSize": 15,
+"cSpell.userWords": [
+    "jsdoc",
+    "ecma",
+    "camelcase",
+    "linebreak",
+    "bitwise",
+    "eqeqeq",
+    "Unmount",
+    "devtool",
+    "Gulpfile",
+    "gitignore",
+    "stylelint",
+    "yosay",
+    "Naujs",
+    "dotfiles",
+    "codepoint",
+    "woff",
+    "SVGs",
+    "htaccess",
+    "editorconfig",
+    "eslintignore",
+    "stylelintrc",
+    "webapp",
+    "polyfill"
+]
 }
