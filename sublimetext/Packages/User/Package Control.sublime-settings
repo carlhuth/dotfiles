@@ -36,7 +36,6 @@
 		"SublimeLinter-contrib-stylelint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
-		"Terminal",
-		"tern_for_sublime"
+		"Terminal"
 	]
 }
